@@ -21,7 +21,7 @@ public class CoffeeMaker {
 		boolean play_f = true;
 		// 제어문 조작 불리언
 		boolean management_f = false;
-		System.out.print("hello 반가워요 이거 짤리면 나 울어.괜찮은 검쬬??");
+		System.out.print("가나다라마바사 아자차카타파하");
 		System.out.print("정말 괜찮은 건가요??");
 		while(play_f) {
 			if(management_f) {
