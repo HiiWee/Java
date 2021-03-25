@@ -16,12 +16,12 @@
 + 2021.03.20 레퍼지토리 삭제 후 다시 생성
 + 2021.03.24 커피 추출(메뉴얼 모드) 메소드 추가
 + 2021.03.25 기능 추가 및 변경
-      - 변경: [메뉴얼 모드] -> [기본 모드] 이름 변경
-      - 추가: [기본모드] makeBasicCoffee()
-      - 추가: 원두 추가 메소드  put[SIZE]CoffeeBean()  [SIZE] = “Small”, “Medium”, “Large” 
-      - 추가: 물 추가 메소드  putWater()
-      - 추가: 얼음 추가 메소드  putIce()
-      - 추가: [기본 모드] 아메리카노 생성 메소드 makeAmericano(Integer)
+      + 변경: [메뉴얼 모드] -> [기본 모드] 이름 변경
+      + 추가: [기본모드] makeBasicCoffee()
+      + 추가: 원두 추가 메소드  put[SIZE]CoffeeBean()  [SIZE] = “Small”, “Medium”, “Large” 
+      + 추가: 물 추가 메소드  putWater()
+      + 추가: 얼음 추가 메소드  putIce()
+      + 추가: [기본 모드] 아메리카노 생성 메소드 makeAmericano(Integer)
 
 ### 진행중인 서브 프로젝트
 + pr01_maker : 2021.03.20 ~ 진행중
