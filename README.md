@@ -30,4 +30,4 @@
 + pr02 : 추가예정
 
 ### 사용언어
-+ Java se 1.8 only
++ Java SE 1.8 only
