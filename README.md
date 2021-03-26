@@ -24,6 +24,14 @@
   + 추가: 물 추가 메소드  putWater()
   + 추가: 얼음 추가 메소드  putIce()
   + 추가: [기본 모드] 아메리카노 생성 메소드 makeAmericano(Integer)
++ 2021.03.26 기능 추가 및 변경
+  + 변경: 메소드명 변경 
+	  + makeBasicCoffee() -> startBasicMode()
+	  + makeAmericano() -> dripAmericano()
+  + 변경: 아이스커피, 기본 커피 추출 메소드 분리
+  + 추가: [기본 모드] 라떼 추출 메소드 dripLatte()
+  + 추가: [기본 모드] 모카 추출 메소드 dripMocca()
+  + 추가: [기본 모드] 아이스 아메리카노, 라떼, 모카 추출 메소드 dripIce[커피이름]
 
 ### 진행중인 서브 프로젝트
 + pr01_maker : 2021.03.20 ~ 진행중
