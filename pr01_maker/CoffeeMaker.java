@@ -10,37 +10,17 @@ public class CoffeeMaker {
 	static int selector;
 	
 	// 커피 원두의 양을 정하는 함수 putSmallCoffeeBean, putMediumCoffeeBean, putLargeCoffeeBean
-	public static int putSmallCoffeeBean() {
-		// 연한커피 원두 1소모
-		if(container[BEAN]-1 < 0) {
+	
+	public static int putCoffeeBean() {
+		// 보통 커피 원두 2소모
+		if(container[BEAN]-2 < 0) {
 			System.out.println("원두가 부족합니다.");
 			return 0;
 		}
 		else {
 			System.out.println("원두를 추출합니다.");
-			container[BEAN] -= 1;
-			return 1;
-		}
-	}
-	
-	public static void putMediumCoffeeBean() {
-		// 보통 커피 원두 2소모
-		if(container[BEAN]-2 < 0) {
-			System.out.println("원두가 부족합니다.");
-		}
-		else {
-			System.out.println("원두를 추출합니다.");
 			container[BEAN] -= 2;
-		}
-	}
-	
-	public static void putLargeCoffeeBean() {
-		//  진한 커피 원두 2소모
-		if(container[BEAN]-3 < 0)
-			System.out.println("원두가 부족합니다.");
-		else {
-			System.out.println("원두를 추출합니다.");
-			container[BEAN] -= 3;
+			return 1;
 		}
 	}
 	
@@ -82,14 +62,14 @@ public class CoffeeMaker {
 	
 	public static void dripAmericano() {
 		System.out.println("[아메리카노]");
-		putMediumCoffeeBean();
+		putCoffeeBean();
 		putWater();
 		System.out.println("아메리카노가 완성 됐습니다!");
 	}
 	
 	public static void dripIceAmericano() {
 		System.out.println("[아이스 아메리카노]");
-		putMediumCoffeeBean();
+		putCoffeeBean();
 		putWater();
 		putIce();
 		System.out.print("아이스 아메리카노가 완성 됐습니다.\n");
@@ -97,27 +77,27 @@ public class CoffeeMaker {
 	
 	public static void dripLatte() {
 		System.out.println("[카페라떼]");
-		putLargeCoffeeBean();
+		putCoffeeBean();
 		putMilk();
 	}
 	
 	public static void dripIceLatte() {
 		System.out.println("[아이스 카페라떼]");
-		putLargeCoffeeBean();
+		putCoffeeBean();
 		putMilk();
 		putIce();
 	}
 	
 	public static void dripMocca() {
 		System.out.println("[카페모카]");
-		putMediumCoffeeBean();
+		putCoffeeBean();
 		putChocolate();
 		putWater();
 	}
 	
 	public static void dripIceMocca() {
 		System.out.println("[아이스 카페모카]");
-		putMediumCoffeeBean();
+		putCoffeeBean();
 		putChocolate();
 		putWater();
 		putIce();
