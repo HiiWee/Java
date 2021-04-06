@@ -16,14 +16,14 @@
 + 2021.03.19 pr01_maker/CoffeeMaker.java 업로드
 + 2021.03.20 CoffeeMaker.java 초기(설명 및 커피만들기, 관리자 목록선택)설정 추가
 + 2021.03.20 레퍼지토리 삭제 후 다시 생성
-+ 2021.03.24 커피 추출(메뉴얼 모드) 메소드 추가
++ 2021.03.24 커피 추출(메뉴얼 모드) 함수 추가
 + 2021.03.25 기능 추가 및 변경
   + 변경: [메뉴얼 모드] -> [기본 모드] 이름 변경
   + 추가: [기본모드] makeBasicCoffee()
   + 추가: 원두 추가 함수  put[SIZE]CoffeeBean()  [SIZE] = “Small”, “Medium”, “Large” 
   + 추가: 물 추가 함수  putWater()
   + 추가: 얼음 추가 함수  putIce()
-  + 추가: [기본 모드] 아메리카노 생성 메소드 makeAmericano(Integer)
+  + 추가: [기본 모드] 아메리카노 생성  makeAmericano(Integer)
 + 2021.03.26 기능 추가 및 변경
   + 변경: 함수명 변경 
 	  + makeBasicCoffee() -> startBasicMode()
