@@ -13,23 +13,20 @@ public class CoffeeMaker {
 	
 	public static int putCoffeeBean() {
 		// 보통 커피 원두 2소모
-		if(container[BEAN]-2 < 0) {
-			System.out.println("원두가 부족합니다.");
+		if(container[BEAN]-2 < 0)
 			return 0;
-		}
 		else {
-			System.out.println("원두를 추출합니다.");
 			container[BEAN] -= 2;
 			return 1;
 		}
 	}
 	
-	public static void putWater() {
+	public static int putWater() {
 		if(container[WATER]-2 < 0)
-			System.out.println("물이 부족합니다.");
+			return 0;
 		else {
-			System.out.println("물을 넣습니다.");
 			container[WATER] -= 2;
+			return 1;
 		}
 	}
 	
@@ -61,9 +58,26 @@ public class CoffeeMaker {
 	}
 	
 	public static void dripAmericano() {
+		int[] status = new int[2];
+
 		System.out.println("[아메리카노]");
-		putCoffeeBean();
-		putWater();
+
+		status[0] = putCoffeeBean();
+
+		if(status[0] == 1)
+			System.out.println("원두를 넣습니다.");
+		else {
+			System.out.println("원두가 부족합니다.");
+			return;
+		}
+		
+		status[1] = putWater();
+		if(status[1] == 1)
+			System.out.println("물을 넣습니다.");
+		else {
+			System.out.println("물이 부족합니다.");
+			return;
+		}
 		System.out.println("아메리카노가 완성 됐습니다!");
 	}
 	
